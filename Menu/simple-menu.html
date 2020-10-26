@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu - Simple Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+	<style type="text/css">
+	* {
+		margin: 0;
+	}
+	.menu {	
+		align-items: center;
+		background: linear-gradient(#414345, #232526);
+		display: flex;
+		/*flex-wrap: wrap;*/
+		font: 700 14px 'Raleway';
+		justify-content: space-between;
+	}
+	.menu a {
+		border-bottom: 2px solid transparent;
+		color: #fff;
+		flex: 1;
+		padding: 1em 0.5em;
+		text-align: center;
+		text-decoration: none;
+	}
+	.menu2 a.active,
+	.menu2 a:hover:not(.brand) {
+		border-bottom: 2px solid orange;
+		color: orange;
+	}
+/*	.menu2 a:last-child {
+		border-right: none;
+	}*/
+	.menu a.brand {
+		font-size: 22px;
+		color: #fff;
+		border-right: 1px solid #000;
+		padding: 0;
+	}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<a href="" class="brand">Amason</a>
+		<a href="">Product</a>
+		<a href="" class="active">Promo</a>
+		<a href="">Shop</a>
+		<a href="">Best Seller</a>
+		<a href="">New Arrivals</a>
+		<a href="">Shipping</a>
+		<a href="">Register</a>
+		<a href="">Login</a>
+	</div>
+</body>
+</html>

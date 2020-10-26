@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table Pricing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	html {
+		/*background: linear-gradient(-45deg, #f3f3f3,#ccc) no-repeat;*/
+		height: 100%;
+	}
+	table.pricing {
+		border-collapse: collapse;
+		font-family: Helvetica;
+		width: 70%;
+		margin: 0 auto;
+	}
+	table.pricing th {
+		/*color: #fff;*/
+		height: 100px;
+		font: bold 34px Helvetica;
+	}
+	table.pricing td {
+		text-align: center;
+		padding: 0.75em 2em;
+	}
+	table.pricing th:nth-child(2),
+	table.pricing td:nth-child(2) {
+		/*background: linear-gradient(-90deg, #2193b0, #6dd5ed);*/
+		background: #f5f5f5;
+		color: #333;
+		font-weight: bold;
+		width: 30%;
+	}
+	table.pricing th:nth-child(3),
+	table.pricing td:nth-child(3) {
+		background: linear-gradient(90deg, #f12711, #f5af19);
+		color: #fff;
+		font-weight: bold;
+		width: 30%;
+	}
+
+	table.pricing th span {
+		background: #333;
+		color: #fff;
+		font-size: 20px;
+		font-weight: normal;
+		
+		display: block;
+		width: 70%;
+
+		border-radius: 25px;
+		padding: 0.25em 0;
+
+
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	table.pricing td:nth-child(1) {
+		background: #333;
+		color: #fff;
+		border-bottom: 1px solid #111;
+		text-align: right;
+		/*width: 100px;*/
+		/*font-weight: bold;*/
+	}
+	
+	</style>
+</head>
+<body>
+	<table class="pricing">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Free<span>Rp 0,-</span></th>
+				<th>Pro<span>Rp 149,000,-</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Jumlah Akun</td>
+				<td>1</td>
+				<td>Unlimited</td>
+			</tr>
+			<tr>
+				<td>Kapasitas Penyimpanan</td>
+				<td>1GB</td>
+				<td>20GB</td>
+			</tr>
+			<tr>
+				<td>Tema Tersedia</td>
+				<td>1</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>Layanan Update</td>
+				<td>&times;</td>
+				<td>1 Tahun</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

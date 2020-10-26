@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Button - Outline Button</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<style type="text/css">
+	/* STEP 1 */
+	.outline-icon-button {
+		background: none;
+		border: 2px solid #333333;
+		border-radius: 5px;
+		font: bold 16px Helvetica;
+		text-decoration: none;
+		padding: 15px;
+	}
+	.outline-icon-button.facebook {
+		border-color: #1877F2;
+		color: #1877F2;
+	}
+	.outline-icon-button.twitter {
+		border-color: #1DA1F2;
+		color: #1DA1F2;
+	}
+	/* STEP 3 */
+	.outline-icon-button > i {
+		vertical-align: middle;
+	}
+	.outline-icon-button:hover {
+		opacity: 0.7;
+	}
+	</style>
+</head>
+<body>
+	<button class="outline-icon-button facebook">
+		<i class="la la-facebook la-lg"></i>
+		Login dengan Facebook
+	</button>
+	<a href="#" class="outline-icon-button twitter">
+		<i class="la la-twitter la-lg"></i>
+		Login dengan Twitter
+	</a>
+</body>
+</html>

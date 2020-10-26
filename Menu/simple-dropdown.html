@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu - Simple Dropdown</title>
+	<style type="text/css">
+	/* STEP 1 */
+	* {
+		margin: 0;
+	}
+	/* STEP 2 */
+	ul.menu {
+		list-style: none;
+		background: #884609;
+		font: bold 16px Arial;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* STEP 3 */
+	ul.menu li {
+		position: relative;
+  		display: inline-block;
+	}
+	/* STEP 4 */
+	ul.menu li:hover {
+		background: #c88444;
+	}
+
+	/* STEP 5 */
+	ul.menu a {
+		color: #fff;
+		display: block;
+		padding: 0.75em 1em;
+		text-decoration: none;
+	}
+	/* STEP 6 */
+	ul.menu a:hover {
+		text-decoration: underline;
+	}
+	
+	/* STEP 7 */
+	ul.menu ul {
+		visibility: hidden;
+		position: absolute;
+		top: auto;
+		left: auto;
+		min-width: 180px;
+		margin:0;
+		padding: 0;
+		list-style: none;
+	}
+	/* STEP 8 */
+	ul.menu li:hover > ul {
+		visibility: visible;
+		background: #c88444;
+	}
+	
+	</style>
+</head>
+<body>
+	
+	<ul class="menu">
+		<li><a href="">Home</a></li>
+		<li>
+			<a href="">Produk</a>
+			<ul>
+				<li><a href="">Kripik Pisang</a></li>
+				<li><a href="">Kripik Kulit</a></li>
+				<li><a href="">Kripik Ubi</a></li> 
+				<li><a href="">Kripik Sayur</a></li>
+				<li><a href="">Kripik Singkong</a></li>
+			</ul>
+		</li>
+		<li><a href="">Cara Pemesanan</a></li>
+		<li><a href="">Jadi Reseller</a></li>
+		<li><a href="">Hubungi</a></li>
+	</ul>
+</body>
+</html>

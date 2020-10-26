@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table Strip</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	html {
+		background: linear-gradient(-45deg, #f3f3f3,#ccc) no-repeat;
+		height: 100%;
+	}
+	table.strip {
+		border-collapse: collapse;
+		background: #ffffff;
+		color: #333;
+		font-family: Helvetica;
+		margin: 0 auto;
+		width: 60%;
+	}
+	table.strip th {
+		padding: 1em 0;
+		background: #13404d;
+		color: #fff;
+	}
+	table.strip td {
+		text-align: center;
+		padding: 0.75em 0;
+	}
+	table.strip tbody td:nth-child(2) {
+		text-align: left;
+	}	
+	table.strip tbody tr:nth-child(odd) {
+		background: #f3f3f3;
+	}
+	table.strip tbody tr:nth-child(even) {
+		background: #ffffff;
+	}
+	</style>
+</head>
+<body>
+
+	<table class="strip">
+		<thead>
+			<tr>
+				<th>Ranking</th>
+				<th>Nama Siswa</th>
+				<th>NIK</th>
+				<th>Kelas</th>
+				<th>Nilai</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Andi Gunawan</td>
+				<td>43238003</td>
+				<td>1A</td>
+				<td>98</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Aqilla Jayanti</td>
+				<td>43238043</td>
+				<td>1B</td>
+				<td>96</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Bagas Indra Lesmana</td>
+				<td>43238033</td>
+				<td>1B</td>
+				<td>93</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Chintya Putri Natasha</td>
+				<td>43238067</td>
+				<td>1A</td>
+				<td>92</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Danang Wahyu Septiadi</td>
+				<td>43238010</td>
+				<td>1B</td>
+				<td>90</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>

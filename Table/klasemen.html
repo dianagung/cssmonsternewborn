@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table Klasemen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	html {
+		background: linear-gradient(-45deg, #f3f3f3,#ccc) no-repeat;
+		height: 100%;
+	}
+	/* STEP 1 */
+	table.klasemen {
+		border-collapse: collapse;
+		background: linear-gradient(45deg, #141E30, #243B55);
+		color: #fff;
+		font-family: Helvetica;
+		margin: 0 auto;
+	}
+	/* STEP 2 */
+	table.klasemen {
+		height: 300px;
+	}
+	table.klasemen th {
+		padding: 1.5em 0;
+	}
+	table.klasemen tr.highlight {
+		background: rgba(255,255,255,0.1);
+		color: #FFDE87;
+	}
+	table.klasemen td {
+		width: 100px;
+		font-size: 20px;
+		text-align: center;
+	}
+	table.klasemen td:nth-child(2) {
+		text-align: left;
+		width: 35%;
+	}
+	table.klasemen td img,
+	table.klasemen td span {
+		vertical-align: middle;
+		margin-right: 5px;
+		display: inline-block;
+	}
+	</style>
+</head>
+<body>
+	<table class="klasemen">
+		<thead>
+			<tr>
+				<th>Pos.</th>
+				<th>Tim</th>
+				<th>Main</th>
+				<th>M</th>
+				<th>S</th>
+				<th>K</th>
+				<th>SG</th>
+				<th>Poin</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="highlight">
+				<td>1</td>
+				<td>
+					<img src="https://www.countryflags.io/id/flat/32.png" alt="ID">
+					<span>Indonesia</span>
+				</td>
+				<td>3</td>
+				<td>1</td>
+				<td>2</td>
+				<td>0</td>
+				<td>+2</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>
+					<img src="https://www.countryflags.io/in/flat/32.png" alt="IN">
+					<span>India</span>
+				</td>
+				<td>3</td>
+				<td>1</td>
+				<td>2</td>
+				<td>0</td>
+				<td>+1</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>
+					<img src="https://www.countryflags.io/ir/flat/32.png" alt="IR">
+					<span>Iran</span>
+				</td>
+				<td>3</td>
+				<td>1</td>
+				<td>1</td>
+				<td>1</td>
+				<td>+3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>
+					<img src="https://www.countryflags.io/vn/flat/32.png" alt="VN">
+					<span>Vietnam</span>
+				</td>
+				<td>3</td>
+				<td>0</td>
+				<td>1</td>
+				<td>2</td>
+				<td>-6</td>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

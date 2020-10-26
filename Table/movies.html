@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table Movies</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	table.movies {
+		border-collapse: collapse;
+		background: #363636;
+		width: 80%;
+		color: #fcf5c2;
+		font-family: Helvetica;
+
+	}
+	table.movies caption {
+		background: #444;
+		color: #fff;
+		padding: 0.75em;
+		text-transform: uppercase;
+		font: bold 12px Helvetica;
+		letter-spacing: 2px;
+	}
+	table.movies thead th {
+		background: #333;
+		/*background: linear-gradient(#555, #333);*/
+	}
+/*	table.movies2 tr:nth-child(even) {
+		background: #363636;
+	}*/
+	table.movies tr:nth-child(odd) {
+		background: #565656;
+	}
+	table.movies th,
+	table.movies td {
+		padding: 0.75em;
+	}
+	</style>
+</head>
+<body>
+	
+
+	<table class="movies">
+		<caption>Theater XXII - Plaza XYZ</caption>
+		<thead>
+			<tr>
+				<th>MOVIES</th>
+				<th colspan="5">SHOWTIME</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Thor: The Dark World</td>
+				<td>12:00</td>
+				<td>14:15</td>
+				<td>16:30</td>
+				<td>18:45</td>
+				<td>21:00</td>
+			</tr>
+			<tr>
+				<td>Ender's Game</td>
+				<td>12:15</td>
+				<td>14:30</td>
+				<td>16:45</td>
+				<td>19:00</td>
+				<td>21:15</td>
+			</tr>
+			<tr>
+				<td>Despicable Me 3</td>
+				<td>11:30</td>
+				<td>13:25</td>
+				<td>15:20</td>
+				<td>17:15</td>
+				<td>19:10</td>
+			</tr>
+			<tr>
+				<td>Wonder Woman</td>
+				<td>12:45</td>
+				<td>15:25</td>
+				<td>18:05</td>
+				<td>20:45</td>
+				<td>-</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

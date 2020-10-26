@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form - Contact Form</title>
+	<style type="text/css">
+	* { box-sizing: border-box;margin:0;padding:0;outline:none; }
+	body {
+		background: linear-gradient(45deg, #b92b27, #1565C0);
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+		position: relative;
+	}
+	#contact-form {
+		display: block;
+		background: #fff;
+		width: 400px;
+		margin: 5% auto;
+		padding: 1em 2em;
+	}
+	#contact-form form{
+		margin-top: 35px;
+	}
+	#contact-form h1 {
+		font-family: Helvetica;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: 0.5em;
+	}
+	#contact-form .group {
+		display: block;
+		margin-bottom: 15px;
+	}
+	#contact-form label {
+		display: block;
+		font: bold 12px Helvetica;
+		color: #888;
+		margin-bottom: 5px;
+	}
+	#contact-form label.radio {
+		display: inline-block;
+		font-weight: normal;
+		width: 20%;
+	}
+	#contact-form label.radio input {
+		margin-right: 5px;
+		vertical-align: middle;
+		margin-top: -1px;
+	}
+	#contact-form input[type=text],
+	#contact-form textarea {
+		background: #f4f4f4;
+		border: none;
+		border-radius: 5px;
+		/*padding: 1em;*/
+		padding: 0.5em 1em;
+		height: 40px;
+		width: 100%;
+	}
+	#contact-form textarea {
+		height: 100px;
+	}
+	#contact-form input[type=submit] {
+		border: none;
+		background: linear-gradient(45deg,#ec008c,#fc6767);
+		color: #fff;
+		font-weight: bold;
+		padding: 0.5em 2em;
+	}
+	#contact-form input[type=submit]:hover {
+		opacity: 0.8;
+	}
+	</style>
+</head>
+<body>
+	<div id="contact-form">
+		<h1>Kirim Pesan</h1>
+		<form>
+			<div class="group">
+				<label for="sapaan">Sapaan</label>
+				<label for="tuan" class="radio">
+					<input type="radio" name="sapaan" id="tuan" /> Tuan
+				</label>
+				<label for="nyonya" class="radio">
+					<input type="radio" name="sapaan" id="nyonya" /> Nyoya
+				</label>
+			</div>
+			<div class="group">
+				<label for="nama">Nama Lengkap</label>
+				<input type="text" id="nama" placeholder="Masukan nama anda" />
+			</div>
+			<div class="group">
+				<label for="email">Alamat Email</label>
+				<input type="text" id="email" placeholder="Masukan email anda" />
+			</div>
+			<!-- <div class="group">
+				<label for="subjek">Subjek</label>
+				<input type="text" id="subjek" placeholder="Masukan subjek pesan" />
+			</div> -->
+			<div class="group">
+				<label for="pesan">Pesan</label>
+				<textarea id="pesan"></textarea>
+			</div>
+			<div class="group">
+				<input type="submit" value="Kirim" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
